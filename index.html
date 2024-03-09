@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Beautifully Impressed Header -->
+    <style>
+        header {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Fruity Freshness</h1>
+        <p>Discover the Natural Goodness!</p>
+    </header>
+
+    <div class="container">
+        <div class="wave">
+            <img src="bg.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Types</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            
+            <img src="logo.png" alt="">
+           
+        </nav>
+
+        <div class="main-content">
+            <div class="image-pista">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img3.jpg" alt=""></div>    
+                    </div> 
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Fruity Freshness</h1>
+                <p>In a world full of processed foods and artificial flavors, there's something truly magical about biting into a fresh,<br> ripe fruit.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>100% Organic</h3>
+                    <p>Fully Natural and organic.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img5.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Not Expensive</h3>
+                    <p>Check once..</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img6.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Super Healthy</h3>
+                    <p>Make changes to your life..</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+            });
+
+            function autoSlide() {
+                swiper.slideNext();
+            }
+
+            setInterval(autoSlide, 1000); 
+        });
+    </script>
+    
+    <!-- Beautifully Impressed Footer -->
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+    <footer>
+        <p>&copy; 2024 Fruity Freshness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
